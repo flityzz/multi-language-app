@@ -1,10 +1,16 @@
 import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event'; 
+import { BrowserRouter as Router } from "react-router-dom";
+import { useTranslation } from 'react-i18next'
+
 import App from './App';
 
 test('renders the component with language flags', () => {
-  render(<App />);
-  
+
+  render(<Router>
+    <App />
+  </Router>);
+  const { i18n } = useTranslation();
+
   const brFlag = screen.getByAltText('Brazil Flag');
   const usFlag = screen.getByAltText('USA Flag');
 

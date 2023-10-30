@@ -7,7 +7,6 @@ RUN mkdir /srv/app
 WORKDIR /srv/app
 
 COPY public ./public
-COPY assets ./assets
 COPY package.json package-lock.json ./
 COPY src ./src
 

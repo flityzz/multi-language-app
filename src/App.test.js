@@ -1,8 +1,14 @@
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event'; 
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders the component with language flags', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  
+  const brFlag = screen.getByAltText('Brazil Flag');
+  const usFlag = screen.getByAltText('USA Flag');
+
+  expect(brFlag).toBeInTheDocument();
+  expect(usFlag).toBeInTheDocument();
 });
+

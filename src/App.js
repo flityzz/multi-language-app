@@ -38,11 +38,13 @@ function App() {
 
     <div className='flex items-center justify-end'>
       <Flag
+        alt={'Brazil Flag'}
         image={BrasilFlag}
         isSelected={selectedFlag === 'pt-BR'}
         onClick={() => navigate('/pt-BR')}
       />
       <Flag
+        alt={'USA Flag'}
         image={EuaFlag}
         isSelected={selectedFlag === 'en-US'}
         onClick={() => navigate('/en-US')}

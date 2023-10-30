@@ -7,6 +7,7 @@ RUN mkdir /srv/app
 WORKDIR /srv/app
 
 COPY public ./public
+COPY tailwind.config.js ./
 COPY package.json package-lock.json ./
 COPY src ./src
 

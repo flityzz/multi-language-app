@@ -28,11 +28,9 @@ function App() {
     } else {
       setSelectedFlag('pt-BR'); 
     }
-
     
-    if (languageFromPath !== selectedLanguage) {
-      i18n.changeLanguage(languageFromPath);
-    }
+    languageFromPath.length > 0 ? i18n.changeLanguage(languageFromPath) : i18n.changeLanguage('pt-BR');
+    
   }, [location, i18n, selectedLanguage]);
 
   return (

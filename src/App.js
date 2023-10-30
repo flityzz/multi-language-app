@@ -4,6 +4,8 @@ import { BrasilFlag, EuaFlag } from './assets'
 import Flag from './components/Flag'
 import Translator from './components/Translator'
 
+import './app.css'
+
 function App() {
 
   const { i18n } = useTranslation()

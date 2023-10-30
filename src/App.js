@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { BrasilFlag, EuaFlag } from './assets'
 
 import Flag from './components/Flag'
+import Translator from './components/Translator'
 
 function App() {
 
@@ -10,7 +11,6 @@ function App() {
 
   function handleChangeLanguage(language) {
     i18n.changeLanguage(language)
-    console.log(language)
   }
   
   return (
@@ -30,7 +30,7 @@ function App() {
       </div>
       
       <div>
-        <h1>test</h1>
+        <Translator path="home.message"/>
       </div>
     </div>
   );

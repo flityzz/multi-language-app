@@ -3,9 +3,13 @@ LABEL version="1.0"
 LABEL description="A multi language app"
 LABEL maintainer = ["jvlds.joaovitor@gmail.com"]
 
-RUN mkdir /srv/example
-WORKDIR /srv/example
+RUN mkdir /srv/app
+WORKDIR /srv/app
 
-COPY package.json yarn.lock ./
-RUN yarn && yarn cache clean
-COPY . .
+COPY public ./public
+COPY package.json package-lock.json ./
+COPY src ./src
+
+RUN npm install
+
+CMD ["npm", "start"]

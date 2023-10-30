@@ -1,3 +1,7 @@
+import { useTranslation } from 'react-i18next'
+import { BrasilFlag, EuaFlag } from './assets'
+
+import Flag from './Flag'
 
 function App() {
   return (

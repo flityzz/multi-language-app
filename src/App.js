@@ -105,15 +105,15 @@ function App() {
             <div className="flex flex-wrap -mb-4">
               <div className="w-full mb-4">
                   <label className="block text-gray-600 font-semibold" htmlFor="name"><Translator path={'contactUs.name'}/></label>
-                  <input type="text" id="name" name="name" placeholder={<Translator path={'contactUs.namePlaceholder'}/>} className="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                  <input type="text" id="name" name="name" placeholder={i18n.t('contactUs.namePlaceholder')} className="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
               </div>
               <div className="w-full mb-4">
                   <label className="block text-gray-600 font-semibold" htmlFor="email"><Translator path={'contactUs.email'}/></label>
-                  <input type="email" id="email" name="email" placeholder={<Translator path={'contactUs.emailPlaceholder'}/>} className="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                  <input type="email" id="email" name="email" placeholder={i18n.t('contactUs.emailPlaceholder')} className="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
               </div>
               <div className="w-full mb-4">
                   <label className="block text-gray-600 font-semibold" htmlFor="message"><Translator path={'contactUs.message'}/></label>
-                  <textarea id="message" name="message" placeholder={<Translator path={'contactUs.messagePlaceholder'}/>} rows="5" className="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                  <textarea id="message" name="message" placeholder={i18n.t('contactUs.messagePlaceholder')} rows="5" className="appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
               </div>
               <div className="w-full mb-4 flex justify-center">
                   <button type="submit" className="px-8 py-3 bg-gray-900 text-white font-semibold rounded-lg shadow hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-1 focus:ring-offset-gray-800"><Translator path={'contactUs.buttonSendMessage'}/></button>

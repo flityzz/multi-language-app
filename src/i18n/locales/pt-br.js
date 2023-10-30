@@ -25,7 +25,7 @@ const translateObject = {
       email: 'Email',
       emailPlaceholder: 'Seu Email',
       message: 'Mensagem',
-      mesagePlaceholder: 'Sua Mensagem',
+      messagePlaceholder: 'Sua Mensagem',
       buttonSendMessage: 'Enviar',
       address:'123 Main Street, Anytown USA',
       phone: 'Telefone'

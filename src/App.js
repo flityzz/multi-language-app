@@ -22,7 +22,6 @@ function App() {
   useEffect(() => {
     const languageFromPath = location.pathname.slice(1);
     
-    // Verifica e atualiza a bandeira selecionada com base na URL
     if (languageFromPath.toUpperCase() === 'EN-US') {
       setSelectedFlag('en-US');
     } else {

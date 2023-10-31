@@ -61,7 +61,9 @@ function App() {
     <section className="py-12">
        <div className="flex flex-wrap justify-center gap-4 md:gap-8 lg:gap-16 xl:gap-20">
           
-       {Array(4).fill(<Article />)}
+       {[...Array(4)].map((element, index) =>
+        <Article key={index} />
+       )}
          
        </div>
     </section>

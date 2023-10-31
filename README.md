@@ -26,13 +26,3 @@ Install the project dependencies:
 npm install
 Start the development server:
 npm start
-
-Scripts
-npm start: Start the development server.
-npm build: Build the production version of the app.
-npm test: Run tests using Jest.
-npm eject: Eject from create-react-app for more advanced configurations.
-
-Browser Support
-Production: >0.2%, not dead, not op_mini all
-Development: last 1 Chrome version, last 1 Firefox version, last 1 Safari version

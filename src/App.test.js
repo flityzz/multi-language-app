@@ -1,7 +1,7 @@
 import {cleanup, render, screen, fireEvent} from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import App from '../App';
-import '../i18n'
+import App from '../src/App';
+import '../src/i18n'
 
 afterEach(cleanup);
 
